@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,100&display=swap');
+
+/* navbar */
+
+section {
+    cursor: pointer;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    padding: 1.2%;
+    z-index: 999999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin-top: -15px;
+}
+
+.bi-linkedin {
+    color: #eeeeee !important;
+}
+
+.nav-link {
+    top: 0;
+}
+
+@media screen and (max-width: 575px) {
+    .nav-item {
+        border-radius: 50%;
+        width: 6em;
+    }
+}
+
+.nav-item {
+    border-radius: 50%;
+    box-shadow: white;
+}
+
+
+/* ends here */
+
+
+/* footer */
+
+#footerbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1%;
+    position: fixed;
+    z-index: 12;
+    background-color: transparent;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin-bottom: -20px;
+    background-color: black;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+a:hover {
+    color: #20c997;
+    margin: 10px;
+}
+
+
+/* my-5 rounded mx-auto d-block pic */
+
+
+/* landing */
+
+.landing {
+    background-position: 0;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: 0%;
+    background-image: url(/images/darkimg.jpg);
+}
+
+.bit {
+    font-size: larger;
+    font-style: italic
+}
+
+.bimage {
+    background-image: url(/images/darkimg.jpg);
+    background-position: 0%;
+    object-fit: cover;
+    color: black;
+}
+
+h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    align-items: center;
+    font-weight: bolder;
+}
+
+h5 {
+    font-size: large;
+    font-weight: bold;
+}
+
+.animate {
+    width: 100%;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    object-fit: contain;
+}
+
+.pic {
+    width: auto;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background-attachment: fixed;
+}
+
+#about {
+    height: 100%;
+    overflow: auto;
+}
+
+section {
+    height: 100% !important;
+    overflow: auto;
+    /* overflow-x: hidden; */
+}
+
+
+/* ends */
+
+
+/* education */
+
+.edufont {
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+}
+
+
+/* contact */
+
+.spc {
+    margin-bottom: 30px;
+    font-size: large;
+    justify-content: flex-start;
+}
+
+.photo {
+    align-items: center !important;
+    width: 80%;
+    height: 80%;
+    margin: auto;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.pics {
+    width: 25%;
+    height: 25%;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: 0 0px;
+}
+
+.size {
+    width: 50%;
+    height: 50%;
+    object-fit: cover;
+}
+
+@keyframes float {
+    0% {
+        box-shadow: 0 5px 15px 0px white;
+        transform: translatey(0px);
+    }
+    50% {
+        box-shadow: 0 25px 15px 0px white;
+        transform: translatey(-20px);
+    }
+    100% {
+        box-shadow: 0 5px 15px 0px white;
+        transform: translatey(0px);
+    }
+}
+
+.mrg {
+    margin-right: 0px !important;
+}
+
+.icons {
+    margin-right: 10px;
+}
+
+
+/* inline */
+
+.inline {
+    justify-content: space-around;
+}
+
+.border-warning {
+    height: 300px;
+    min-width: auto;
+}
+
+.progress-bar {
+    height: 2.5px;
+}
+
+.progress {
+    height: 5px;
+    line-height: 0.1;
+}
+
+.btn-primary {
+    align-items: center;
+}
+
+
+/* test */
+
+h3 {
+    padding: 24px;
+    background: linear-gradient(to right, hsl(159, 90%, 28%) 0, hsl(245, 83%, 46%) 10%, hsl(53, 91%, 48%) 20%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shine 1s infinite linear;
+}
+
+@keyframes shine {
+    0% {
+        background-position: 0;
+    }
+    60% {
+        background-position: 600px;
+    }
+    100% {
+        background-position: 600px;
+    }
+}
+
+h5 {
+    padding: 24px;
+    background: linear-gradient(to left, hsl(55, 85%, 52%) 0, hsl(118, 97%, 50%) 10%, hsl(0, 99%, 41%) 20%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shine 5s infinite linear;
+}
+
+h5 {
+    margin: 10px 0 0 0;
+    font-weight: bolder;
+    text-transform: capitalize;
+    color: #eeeeee;
+}
+
+.avatar {
+    width: auto;
+    height: auto;
+    box-sizing: border-box;
+    border-radius: 50%;
+    border: 5px white solid;
+    overflow: hidden;
+    box-shadow: 10px 5px 15px 05px white;
+    transform: translatey(2px);
+    animation: float 10s ease-in-out infinite;
+}
